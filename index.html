@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="https://i.ibb.co/pydGBj6/koolaidcat-test2.png">
     <title>KoolAidCat</title>
 </head>
 <body>
-    <center><img src="https://i.ibb.co/pydGBj6/koolaidcat-test2.png" alt="koolaidcat-test2" border="0" width="300px"></center>
-    <center><h1 style="font-size: '48px';">Hi there!</h1></center>
-    <center><p>Here you can find the stuff that I've made</p></center>
-    <center><button class="downloadsButton">My Stuff</button></center>
+    <div class="bigtextBodyKoolAidCat">
+        <center><img src="https://i.ibb.co/pydGBj6/koolaidcat-test2.png" alt="koolaidcat-test2" border="0" width="300px"></center>
+        <center><h1 style="font-size: 48px;">Hi there!</h1></center>
+        <center><p>Here you can find the stuff that I've made.</p></center>
+        <center><button class="downloadsButton">My Stuff</button></center>
+    </div>
+    <div class="whoamibigContainer">
+        <div class="whoami">
+            <h1>Who am I?</h1><br>
+            <p>My name is Leonardo Sánchez. (Oooh, a Mexican that can code, that's crazy!). I mainly know coding in Python, but I can also make basic programs with C, C# and Kotlin. I also know a bit about music production, but it is definitely not my main thing, not by a long shot!<br><br>I know a bit about graphic design, web design (which, as you can tell by this website, I'm probably not very good at), and I am (somewhat of a ???) nerd when it comes to computers and phones.<br><br>I have made a bunch of Android apps (-and I feel like it's worth noting that none of them ever saw the light of day), and have made one or two bots for Discord. I've also made some tools that you can download for free from this site!<br><br>If you have any questions or suggestions, you can contact me at leonardosanchezportales88@gmail.com, or koolaidcat.questions@gmail.com.</p>
+        </div>
+        <div class="whoamiimage">
+            <img src="https://i.ibb.co/FB1jqdG/IMG-20240923-082616.jpg" alt="A cat" width="400px"><br>
+            <h5>This image isn't related to the text in any way, it's just a cool cat to brighten up your day.</h5>
+        </div>
+    </div>
 </body>
     <style>
         * {
@@ -20,15 +32,41 @@
             font-weight: lighter;
         }
         body {
-            padding: 32px;
+            background-color: black;
         }
         button.downloadsButton {
             cursor: pointer;
             background: linear-gradient(to right, rgb(0, 80, 255), rgb(155, 0, 255));
             color: white;
-            padding: 10px 40px;
+            padding: 15px 90px;
             border: none;
             border-radius: 999px;
+            margin-top: 30px;
+        }
+        button.downloadsButton:hover {
+            background: linear-gradient(to right, rgb(0, 155, 255), rgb(200, 0, 255));
+        }
+        button.downloadsButton:active {
+            background: linear-gradient(to right, rgb(0, 17, 255), rgb(98, 0, 255));
+        }
+        div.bigtextBodyKoolAidCat {
+            background-color: white;
+            padding: 32px;
+        }
+        div.whoami {
+            color: white;
+            padding: 32px;
+            width: fit-content;
+        }
+        div.whoamiimage {
+            width: 500px;
+            color: lightgrey;
+        }
+        div.whoamibigContainer {
+            padding: 32px;
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </html>
+
